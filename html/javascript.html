@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama Academy - JavaScript</title>
+
+    <!-- Chamando uma função de uma biblioteca externa em JavaScript -->
+    <script type="text/javascript" src="../js/script.js"></script>
+
+    
+    <!-- Criando funções e processos com JavaScript -->
+    <script>
+        /* Criando uma mensgaem de saudação
+        alert ("Sejam todos bem vindos!");*/
+
+        /*var empresa="Gama Academy";
+        var texto="Sejam bem vindos a ";
+        alert (texto+empresa); */
+
+        /*var nome=prompt ("Olá seja bem vindo, qual é o seu nome?", "Insira seu nome");
+        alert ("Muito prazer ter você "+nome+" conosco") */
+
+        /*Criando uma função*/
+        /*function mensagem(){
+            alert ("Para obter maiores informações, acesse www.google.com.br")
+        }*/
+
+        /* Criando um função para validar os campos de um formulário */
+        function validar(){
+            var nome=contato.nome_cliente.value;
+            var email=contato.email_cliente.value;
+
+            /*alert(nome+" "+email)*/
+            if(nome==""){
+                alert ("O preenchimento do campo nome é obrigatório");
+                contato.nome_cliente.focus();
+                return false;
+            };
+
+            if(email=="" || email.indexOf('@')==-1){
+                alert ("O preenchimento do campo e-mail é obrigatório, com um e-mail válido");
+                contato.email_cliente.focus();
+                return false;
+            }
+            alert("Muito obrigado por fazer parte do nosso time "+nome+" estaremos enviando todo o conteudo para o email "+email)
+        }
+
+    </script>
+
+
+</head>
+<body>
+        <!-- Criando um cabeçalho -->
+        <h3>Seja bem vindo a GamaAcademy</h3>
+        <p>Para obter maisinformaão com relaçao aos nossos cursos, clique no botão abaixo</p>
+
+        <!-- Criação de um botão para chamar o procedimento em JS-->
+        <input type="button" onclick="mensagem()" value="Me clique">
+        
+        <br><br>
+
+        <!-- Criando um formuario com JavaScript -->
+        <form id="contato" method="POST">
+            Nome:<input type="text" name ="nome_cliente"><br><br>
+            Email:<input type="text" name ="email_cliente"><br><br>
+
+            <!-- Botão de envio dos dados -->
+            <input type="submit" onclick="return validar()" value="Enviar">
+
+        </form>
+        
+</body>
+</html>

@@ -1,0 +1,91 @@
+        /*Crando estios em CSS para oc comandos nativos do HTML*/
+
+        /*Criando um estilo para fomratação do nosso cabeçalho*/
+
+        fieldset{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: rgb(3, 3, 63);
+        }
+        h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 22px;
+            font-weight: bold;
+            color: darkgreen;
+        }
+        /*Criando um estilo para formatação dos paragrafos*/
+        P{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            color: green;
+        }
+        /*Criando um estilo para formatar a cor do corpo da pagina*/
+        body{
+            background-color:lightgray;
+        }
+
+
+        /*Criando estilos em CSS para serem aplicados em classe*/
+        .texto_obs{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 10px;
+            color: green;
+        }
+
+        .menu{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            color: darkblue;
+            font-weight: bolder;
+        }
+
+        /*Criando estilo para os campos do formulario*/
+        .campo_nome{
+            position: relative;
+            left:15px;
+            background-color: rgb(165, 161, 160);
+            color:rgb(59, 36, 189);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 220px;
+        }
+
+        .campo_email{
+            position: relative;
+            left:15px;
+            background-color: rgb(165, 161, 160);
+            color:rgb(59, 36, 189);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 260px;
+        }
+
+        .campo_senha{
+            position: relative;
+            left:15px;
+            background-color: rgb(165, 161, 160);
+            color:rgb(59, 36, 189);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 80px;
+        }
+
+        /*Geração de classes para o Bootstrap*/
+
+        .container{
+            border: 3px solid red;
+        }
+
+        .div1{
+            background-color: yellow;
+        }
+
+        .div2{
+            background-color: green;
+        }
+
+        .div3{
+            background-color: blue;
+        }
+
+        .div4{
+            background-color: red;
+        }
